@@ -3,7 +3,17 @@ html,body {
 }
 
 body {
-    background: url('../img/bg2.jpg') no-repeat;
+    margin: 0;
     height: 100vh;
-    background-size: cover;
-}
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    background: radial-gradient(
+      ellipse 95% 75% at top center,
+      rgba(247, 199, 43, 0.4) 0%,
+      rgba(0, 0, 0, 1) 45%
+    );
+    background-color: #000;
+    color: white;
+    text-align: center;
+  }
