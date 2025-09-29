@@ -9,7 +9,7 @@ body {
     /* justify-content: center;
     align-items: center; */
     background: radial-gradient(
-      ellipse 95% 75% at top center,
+      ellipse 90% 65% at top center,
       rgba(247, 199, 43, 0.4) 0%,
       rgba(0, 0, 0, 1) 45%
     );
