@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     event.preventDefault();
 
+    // pause auto on manual interaction
+    stopAuto();
+
     if (icon.classList.contains('fa-arrow-right')) {
       currentIndex = (currentIndex + 1) % reviewElements.length;
     } else if (icon.classList.contains('fa-arrow-left')) {
@@ -33,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     showReview(currentIndex);
+    startAutoSoon();
   });
 
   // Touch swipe support for mobile
@@ -55,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
       touchEndX = touchStartX;
       touchEndY = touchStartY;
       isSwiping = true;
+      stopAuto();
     }, { passive: true });
 
     swipeContainer.addEventListener('touchmove', function (e) {
@@ -71,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
       isSwiping = false;
 
       // Ignore vertical swipes
-      if (Math.abs(dy) > VERTICAL_TOLERANCE_PX) return;
+      if (Math.abs(dy) > VERTICAL_TOLERANCE_PX) { startAutoSoon(); return; }
 
       if (dx <= -SWIPE_THRESHOLD_PX) {
         // swipe left -> next
@@ -82,8 +87,54 @@ document.addEventListener('DOMContentLoaded', function () {
         currentIndex = (currentIndex - 1 + reviewElements.length) % reviewElements.length;
         showReview(currentIndex);
       }
+      startAutoSoon();
     });
+
+    // Pause on hover (desktop) and resume on leave
+    swipeContainer.addEventListener('mouseenter', stopAuto);
+    swipeContainer.addEventListener('mouseleave', startAutoSoon);
   }
+
+  // Auto-advance carousel
+  var autoTimer = null;
+  var AUTO_MS = 5000; // time between slides
+  var RESUME_DELAY_MS = 2500; // delay after interaction before resuming
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % reviewElements.length;
+    showReview(currentIndex);
+  }
+
+  function startAuto() {
+    if (autoTimer) return;
+    autoTimer = setInterval(nextSlide, AUTO_MS);
+  }
+
+  function stopAuto() {
+    if (!autoTimer) return;
+    clearInterval(autoTimer);
+    autoTimer = null;
+  }
+
+  var resumeTimer = null;
+  function startAutoSoon() {
+    if (resumeTimer) { clearTimeout(resumeTimer); }
+    resumeTimer = setTimeout(function () {
+      startAuto();
+    }, RESUME_DELAY_MS);
+  }
+
+  // Also pause when page is hidden to save resources
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      stopAuto();
+    } else {
+      startAutoSoon();
+    }
+  });
+
+  // Kick off auto-play
+  startAuto();
 });
 
 const button = document.querySelector('#menu-button');
