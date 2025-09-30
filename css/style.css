@@ -4,9 +4,9 @@ html,body {
 
 body {
     margin: 0;
-    /* height: 100vh; */
-    /* display: flex; */
-    /* justify-content: center;
+    /* height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center; */
     background: radial-gradient(
       ellipse 90% 65% at top center,
@@ -18,3 +18,12 @@ body {
     color: white;
     text-align: center;
   }
+
+.reviews {
+  background: radial-gradient(
+    ellipse 90% 65% at top center,
+    rgba(247, 199, 43, 0.4) 0%,
+    rgba(28, 32, 37, 1) 45%
+  );
+  background-color: #1c2025 ;
+}
