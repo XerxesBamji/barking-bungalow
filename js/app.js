@@ -139,8 +139,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const button = document.querySelector('#menu-button');
 const menu = document.querySelector('#menu');
+const closeButton = document.querySelector('#close-menu');
 
+// Add backdrop overlay for mobile sidebar
+const backdrop = document.createElement('div');
+backdrop.className = 'fixed inset-0 bg-black bg-opacity-50 z-40 hidden';
+document.body.appendChild(backdrop);
+
+function openSidebar() {
+  menu.classList.remove('translate-x-full');
+  backdrop.classList.remove('hidden');
+  document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeSidebar() {
+  menu.classList.add('translate-x-full');
+  backdrop.classList.add('hidden');
+  document.body.style.overflow = ''; // Restore scrolling
+}
 
 button.addEventListener('click', () => {
-  menu.classList.toggle('hidden');
+  openSidebar();
+});
+
+closeButton.addEventListener('click', () => {
+  closeSidebar();
+});
+
+backdrop.addEventListener('click', () => {
+  closeSidebar();
+});
+
+// Close sidebar when clicking on links
+const sidebarLinks = menu.querySelectorAll('a');
+sidebarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeSidebar();
+  });
 });

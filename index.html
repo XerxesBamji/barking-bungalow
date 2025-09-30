@@ -33,42 +33,58 @@
                 <span class="sr-only">Toggle sidebar</span>
                  
               
-                <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
-                    <ul
-                    class="pt-4
-                        text-base text-gray-700
-                        md:flex
-                        md:justify-between 
-                        md:pt-0
-                        lg:text-sm
-                        text-xs"
-                    >
-                    <li>
-                        <a class="md:p-4 py-2 block hover:text-purple-400" href="about-us.html"
-                        >About Us</a
-                        >
-                    </li>
-                    <li>
-                        <a class="md:p-4 py-2 block hover:text-purple-400" href="dog-walking.html"
-                        >Dog Walking</a
-                        >
-                    </li>
-                    <li>
-                        <a class="md:p-4 py-2 block hover:text-purple-400" href="dog-boarding.html"
-                        >Dog Boarding</a
-                        >
-                    </li>
-                    <li>
-                        <a class="md:p-4 py-2 block hover:text-purple-400" href="prices.html"
-                        >Prices</a
-                        >
-                    </li>
-                    <li>
-                        <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="terms-conditions.html">Terms & Conditions</a>
-                    </li>
-                    <li>
-                        <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500 md:hidden block" href="contact-us.html">Contact Us</a>
-                    </li>
+                <!-- Mobile Sidebar -->
+                <div class="fixed top-0 right-0 h-full w-80 bg-[#1c2025] transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden" id="menu">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-8">
+                            <img src="/img/logo2.png" class="w-16 h-16">
+                            <button id="close-menu" class="text-white text-2xl">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <ul class="space-y-6">
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="about-us.html">About Us</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="dog-walking.html">Dog Walking</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="dog-boarding.html">Dog Boarding</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="prices.html">Prices</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="terms-conditions.html">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <button class="bg-primary px-6 py-3 rounded-full text-sm text-black hover:bg-transparent hover:text-primary hover:border w-full">
+                                <i class="fa-solid fa-phone mr-2"></i> Contact Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex md:items-center md:w-auto">
+                    <ul class="flex justify-between lg:text-sm text-xs">
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="dog-walking.html">Dog Walking</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="dog-boarding.html">Dog Boarding</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="prices.html">Prices</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="terms-conditions.html">Terms & Conditions</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="md:block hidden">
