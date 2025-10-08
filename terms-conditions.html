@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>The Bark Bungalow - Dog Service</title>
+</head>
+
+<body>
+    <main class="">
+        <header class="lg:container pt-6">
+            <nav class="flex flex-wrap items-center justify-between w-full lg:py-4 md:py-0 py-2 px-4 text-lg text-gray-700">
+                <div>
+                    <a href="index.html">
+                        <img src="/img/logo.png" class="md:w-20 w-16">
+                    </a>
+                </div>
+                
+
+                <svg id="menu-button" aria-hidden="true" class="w-8 h-8 cursor-pointer md:hidden block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Toggle sidebar</span>
+                 
+              
+                <!-- Mobile Sidebar -->
+                <div class="fixed top-0 right-0 h-full w-80 bg-[#1c2025] transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden" id="menu">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-8">
+                            <img src="/img/logo.png" class="w-16 h-16">
+                            <button id="close-menu" class="text-white text-2xl">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <ul class="space-y-6">
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="about-us.html">About Us</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="dog-walking.html">Dog Walking</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="dog-boarding.html">Dog Boarding</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="prices.html">Prices</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors" href="terms-conditions.html">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <button class="bg-primary px-6 py-3 rounded-full text-sm text-black hover:bg-transparent hover:text-primary hover:border w-full">
+                                <i class="fa-solid fa-phone mr-2"></i> Contact Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex md:items-center md:w-auto">
+                    <ul class="flex justify-between lg:text-sm text-xs">
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="dog-walking.html">Dog Walking</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="dog-boarding.html">Dog Boarding</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="prices.html">Prices</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="terms-conditions.html">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:block hidden">
+                    <button class="bg-primary px-6 py-2 rounded-full text-sm text-black hover:bg-transparent hover:text-primary hover:border">
+                        <i class="fa-solid fa-phone mr-2"></i> Contact Us
+                    </button>
+                </div>
+             </div>
+           </nav>
+         </header>
+
+         <section class="md:mt-16 mt-4 md:mx-6 mx-2">
+            <div class="container">
+                <div class="text-left">
+                    <h1 class="md:text-[4.25rem] text-[2.25rem] font-semibold text-primary">Terms & Conditions</h1>
+                    <div class="flex items-center justify-start mx-6">
+                        <div class="font-light md:text-sm text-xs text-white mt-2">
+                            <ol class="terms-list text-2xl mb-16">
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Services Provided
+                                    </p>
+                                    <p class="mb-3 text-sm">
+                                        We offer the following services:
+                                    </p>
+                                    <ul class="ml-5">
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Home Dog Boarding: Overnight stays in a home environment.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Dog Walking: Regular or one-off walks tailored to your dog's needs.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Daycare: Supervised daytime care.
+                                            (Subject to availability)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Requirements for Dogs
+                                    </p>
+                                    <p class="mb-3 text-sm">
+                                        To ensure the safety and well-being of all dogs in our care, all dogs must:
+                                    </p>
+                                    <ul class="ml-5">
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Be fully vaccinated (proof required).
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Be up-to-date on flea, tick, and worm treatments.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Be non-aggressive and able to socialize safely with other dogs and humans.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Be house-trained (for boarding).
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Be microchipped and wear an ID tag.
+                                        </li>
+                                    </ul>
+                                    <p class="mb-3 text-sm">
+                                        We reserve the right to refuse service if your dog does not meet these requirements or behaves aggressively.
+                                    </p>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Meet & Greet / Trial stage.
+                                    </p>
+                                    <ul>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            We require a meet and greet walk in sully for every dog. After the walk we will show to our house and setup. 
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            If the initial meet goes well and you are happy. We then require a trial night (morning drop off - following morning pick up) to assess your dog in details and get him/her used to us, our house and routines. If this goes well we will be happy to have your dog. 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Bookings & Payment
+                                    </p>
+                                    <ul>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            All bookings must be confirmed in advance.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            For long stays a 50% deposit is required to secure the booking. 
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Full payment is due 4 weeks before the boarding begins (or on the day of service).
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Accepted payment methods: cash or bank transfer. 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Cancellations & Refunds
+                                    </p>
+                                    <ul>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Cancellations made 7 days or more in advance will receive a full refund.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Cancellations within 7 days of the start date will incur a cancellation fee of 50% of the total amount of the whole booking.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            No refunds for early return during a boarding stay.No refunds for early return during a boarding stay.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Emergencies & Veterinary Care 
+                                    </p>
+                                    <p class="mb-3 text-sm">
+                                        In the event of illness or emergency:
+                                    </p>
+                                    <ul>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            We will make every effort to contact you or your emergency contact.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            If urgent, we will take your dog to your named vet or to the Vale Veterinary Centre in Barry who we have set up a relationship with.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            You are responsible for any vet fees incurred during your dog's stay/walk.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Liability
+                                    </p>
+                                    <ul>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            We will take all reasonable care of your dog(s).
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            However, we are not liable for injury, loss, illness, or death unless caused by proven negligence.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            You agree to be responsible for any damage or injury your dog causes to property, people, or other animals.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Photos & Updates
+                                    </p>
+                                    <ul>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Here at the bark bungalow we take pride in our customers feedback about the amount of footage and updates we send whilst your dog is in our care. We do sent lots of updates every day without fail. 
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            We may take photos/videos of your dog during their stay or walks for updates or promotional use (social media, website).
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Please inform us in writing if you do not consent to this.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Drop-off & Pick-up
+                                    </p>
+                                    <ul>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            We will be in touch to arrange a drop off and collection time for your dog. We understand sometimes plans change so please let us know if you as soon as possible if you are late. 
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            As previously mentioned our dog boarding rate is for 24 hours. We allow 2 hours free but any further hours we charge a day care rate. For instance: if you drop off your dog at 9am on the 1st of June  and collect and collect at 6pm on the 2nd of June. You will be charge 1 night for boarding plus 1 night if day care. 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Keys and Access (For Walking Clients)
+                                    </p>
+                                    <ul>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            If you provide a key for walking services, it will be securely stored.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            Keys will only be used for accessing your dog and will not be copied or shared.
+                                        </li>
+                                        <li class="mb-3 md:text-sm text-xs leading-6 font-light opacity-70">
+                                            If you have a lock box then let us know the code.  
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pb-6">
+                                    <p class="mb-3">
+                                        Agreement
+                                    </p>
+                                    <p class="mb-3 text-sm">
+                                        We will send you a form to fill at the meet and greet or trial stage. We require signatures that you agree to these terms and conditions.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="js/app.js"></script>
+
+</html>
+
+<!-- https://dribbble.com/shots/23734800-Design-System-Landing-Page-UI -->

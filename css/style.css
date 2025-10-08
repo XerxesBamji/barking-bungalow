@@ -27,3 +27,11 @@ body {
   );
   background-color: #1c2025 ;
 }
+
+.terms-list {
+  list-style: decimal;
+}
+
+.terms-list ul {
+  list-style: disc;
+}
