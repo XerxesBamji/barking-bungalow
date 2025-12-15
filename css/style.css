@@ -35,3 +35,18 @@ body {
 .terms-list ul {
   list-style: disc;
 }
+
+input, textarea {
+  border-radius: 15px;
+  border: 1px solid --primary;
+  padding: .75rem .5rem !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #333;
+
+}
