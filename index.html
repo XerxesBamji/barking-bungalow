@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.js"></script>
     <script src="js/tailwind.config.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -223,35 +223,6 @@
                         </div>
                     </div>
                 </div>
-        </section>
-
-        <section class="my-12">
-            <div class="container">
-                <div class="grid md:grid-cols-3 grid-cols-1 gap-6">
-                    <div class="bg-[#1c2025] p-6 rounded-lg">
-                        <form name="contact" method="POST" netlify>
-                            <p>
-                                <label>Your Name: <input type="text" name="name" /></label>
-                            </p>
-                            <p>
-                                <label>Your Email: <input type="email" name="email" /></label>
-                            </p>
-                            <p>
-                                <label>Your Role: <select name="role[]" multiple>
-                                <option value="leader">Leader</option>
-                                <option value="follower">Follower</option>
-                                </select></label>
-                            </p>
-                            <p>
-                                <label>Message: <textarea name="message"></textarea></label>
-                            </p>
-                            <p>
-                                <button type="submit">Send</button>
-                            </p>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
 
