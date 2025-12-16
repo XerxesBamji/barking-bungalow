@@ -50,3 +50,22 @@ input, textarea {
   background-color: #333;
 
 }
+
+@media (min-width: 768px) { 
+  body {
+    margin: 0;
+    /* height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: radial-gradient(
+      ellipse 50% 15% at top center,
+      rgba(247, 199, 43, 0.4) 0%,
+      rgba(0, 0, 0, 1) 45%
+    );
+    background-color: #000;
+    background-repeat: no-repeat;
+    color: white;
+    /* text-align: center; */
+  }
+}
