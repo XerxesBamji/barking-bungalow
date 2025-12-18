@@ -183,7 +183,7 @@ $(document).ready(function() {
     // Build the gallery
     var galleryHTML = '';
     
-    for(let i = 1; i <= 8; i++) {
+    for(let i = 1; i <= 10; i++) {
         galleryHTML += `
             <a href="img/grooming/photo${i}.jpg" 
                data-lightbox="grooming-gallery" 
