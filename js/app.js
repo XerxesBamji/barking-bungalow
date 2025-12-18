@@ -177,3 +177,30 @@ sidebarLinks.forEach(link => {
     closeSidebar();
   });
 });
+
+
+$(document).ready(function() {
+    // Build the gallery
+    var galleryHTML = '';
+    
+    for(let i = 1; i <= 8; i++) {
+        galleryHTML += `
+            <a href="img/grooming/photo${i}.jpg" 
+               data-lightbox="grooming-gallery" 
+               data-title="Dog Grooming Photo ${i}" 
+               class="gallery-item bg-[#1c2025] p-2 rounded-lg shadow-lg shadow-black">
+                <img src="img/grooming/photo${i}.jpg" alt="Grooming Photo ${i}">
+            </a>
+        `;
+    }
+    
+    // Add to gallery container
+    $('#gallery').html(galleryHTML);
+    
+    // Configure Lightbox2 options
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'albumLabel': 'Image %1 of %2'
+    });
+});

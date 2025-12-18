@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/tailwind.js"></script>
+    <script src="js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- Lightbox2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>The Bark Bungalow - Dog Service</title>
+</head>
+
+<body>
+    <main class="">
+        <header class="lg:container pt-6">
+            <nav class="flex flex-wrap items-center justify-between w-full lg:py-4 md:py-0 py-2 px-4 text-lg text-gray-700">
+                <div>
+                    <a href="index.html">
+                        <img src="/img/logo.png" class="md:w-20 w-16">
+                    </a>
+                </div>
+                
+
+                <svg id="menu-button" aria-hidden="true" class="w-8 h-8 cursor-pointer md:hidden block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Toggle sidebar</span>
+                 
+              
+                <!-- Mobile Sidebar -->
+                <div class="fixed top-0 right-0 h-full w-80 bg-[#1c2025] transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden" id="menu">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-8">
+                            <img src="/img/logo.png" class="w-16 h-16">
+                            <button id="close-menu" class="text-white text-2xl">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <ul class="space-y-6">
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors cursor-pointer" href="about-us.html">About Us</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors cursor-pointer" href="dog-walking.html">Dog Walking</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors cursor-pointer" href="dog-boarding.html">Dog Boarding</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors cursor-pointer" href="dog-grooming.html">Dog Grooming</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors cursor-pointer" href="prices.html">Prices</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-lg block hover:text-primary transition-colors cursor-pointer" href="terms-conditions.html">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="contactUs.html"  class="bg-primary px-6 py-3 rounded-full text-sm text-black hover:bg-transparent hover:text-primary hover:border w-full">
+                                <i class="fa-solid fa-phone mr-2"></i> Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex md:items-center md:w-auto">
+                    <ul class="flex justify-between lg:text-sm text-xs">
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="dog-walking.html">Dog Walking</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="dog-boarding.html">Dog Boarding</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="dog-grooming.html">Dog Grooming</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400" href="prices.html">Prices</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="terms-conditions.html">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:block hidden">
+                    <a href="contactUs.html"  class="bg-primary px-6 py-2 rounded-full text-sm text-black hover:bg-transparent hover:text-primary hover:border">
+                        <i class="fa-solid fa-phone mr-2"></i> Contact Us
+                    </a>
+                </div>
+             </div>
+           </nav>
+         </header>
+
+        <section class="md:mt-16 mt-4 md:mx-6 mx-2">
+            <div class="container">
+                <div class="text-left">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-48 gap-6">
+                        <div class="">
+                            <h1 class="md:text-[4.25rem] text-[2.25rem] font-semibold text-primary">Dog Grooming</h1>
+                            <div class="mt-5">
+                                <p class="mb-4 text-2xl">
+                                    The Bark Bungalow, where every dog is treated like family!
+                                </p>
+                                <p class="mb-4">
+                                    I am a  passionate dog lover and  built The Bark Bungalow to be more than just a grooming salon — it's a relaxing retreat for your furry friends. From soothing baths and breed-specific trims to gentle handling and plenty of cuddles. The goal is to make every pup look and feel their absolute best.
+                                </p>
+                                <p class="mb-4">
+                                   Fully qualified, first-aid trained, and fully insured — providing expert care and peace of mind with every groom. I have also trained in EMI Pet teeth cleaning which is an ultrasonic toothbrush system designed for dogs that uses gentle, motionless ultrasound to clean teeth and gums, eliminating the need for mechanical scrubbing, noise, or vibration. 
+                                </p>
+                                <p class="mb-4">
+                                  At The Bark Bungalow, we understand that each dog has their own personality and needs, which is why we take the time to make every grooming experience calm, positive, and tailored just for them. Whether it's a simple tidy-up or a full spa day, we treat every visit with care, love, and a whole lot of tail wags.
+                                </p>
+                                <p class="mb-4">
+                                  Because at The Bark Bungalow… it's not just grooming — it's a lifestyle of love, comfort, and confidence.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:px-12 px-0 lg:mt-0 mt-8">
+                            <div class="">
+                                <img src="img/grooming/bfe9c848-25cc-42b8-8ca3-f6863c14d23a.MP4" class="lg:w-2/3 md:w-1/2 w-full bg-[#1c2025] p-2 rounded-lg shadow-lg shadow-black" alt="Jimmy, Sophie & Ralphy about us">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-t-2 border-[#1c2025] py-16 mt-16">
+            <div class="container">
+                <div class="">
+                    <h2 class="md:text-[4.25rem] text-[2.25rem] font-semibold text-primary mb-3">Gallery</h2>
+                    <p class="mb-8 text-2xl"> 
+                        A look inside our dog grooming
+                    </p>
+                    
+                    <!-- Gallery Grid -->
+                    <div class="gallery-grid" id="gallery">
+                        <!-- Images will be dynamically generated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-t-2 border-[#1c2025] py-16 mt-16">
+            <div class="container">
+                <div class="">
+                    <div class="">
+                        <h2 class="md:text-[4.25rem] text-[2.25rem] font-semibold text-primary mb-3">Ready to arrange your dog's next stay?</h2>
+                        <p class="mb-8 text-2xl"> 
+                            Enquire now to secure your dog's stay.
+                        </p>
+                        <a href="contactUs.html" class="bg-primary px-6 py-2 rounded-full text-sm text-black hover:bg-transparent hover:text-primary hover:border">
+                            <i class="fa-solid fa-phone mr-2"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="js/app.js"></script>
+
+</html>
