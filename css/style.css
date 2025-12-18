@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center; */
     background: radial-gradient(
-      ellipse 90% 65% at top center,
+      ellipse 90% 45% at top center,
       rgba(247, 199, 43, 0.4) 0%,
       rgba(0, 0, 0, 1) 45%
     );
@@ -17,7 +17,38 @@ body {
     background-repeat: no-repeat;
     color: white;
     /* text-align: center; */
-  }
+}
+
+ /* Tablet adjustment */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        background: radial-gradient(
+            ellipse 90% 15% at top center,
+            rgba(247, 199, 43, 0.4) 0%,
+            rgba(0, 0, 0, 1) 45%
+        );
+        background-color: #000;
+        background-repeat: no-repeat;
+        color: white;
+    }
+}
+
+/* Mobile adjustment */
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        background: radial-gradient(
+            ellipse 90% 15% at top center,
+            rgba(247, 199, 43, 0.4) 0%,
+            rgba(0, 0, 0, 1) 45%
+        );
+        background-color: #000;
+        background-repeat: no-repeat;
+        color: white;
+    }
+}
+
 
 .reviews {
   background: radial-gradient(
