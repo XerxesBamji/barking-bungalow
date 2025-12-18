@@ -24,7 +24,7 @@ body {
     body {
         margin: 0;
         background: radial-gradient(
-            ellipse 90% 15% at top center,
+            ellipse 90% 5% at top center,
             rgba(247, 199, 43, 0.4) 0%,
             rgba(0, 0, 0, 1) 45%
         );
@@ -39,7 +39,7 @@ body {
     body {
         margin: 0;
         background: radial-gradient(
-            ellipse 90% 15% at top center,
+            ellipse 90% 5% at top center,
             rgba(247, 199, 43, 0.4) 0%,
             rgba(0, 0, 0, 1) 45%
         );
