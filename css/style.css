@@ -109,3 +109,49 @@ input, textarea {
     display: block;
 }
 
+
+/* Reviews section */
+
+
+review-card {
+    transition: transform 0.3s ease;
+}
+
+.avatar-gradient-1 { background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); }
+.avatar-gradient-2 { background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%); }
+.avatar-gradient-3 { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); }
+.avatar-gradient-4 { background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%); }
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f7c72b;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: .6;
+}
+.carousel-dot.active {
+    background: #fbbf24;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+.truncate-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.show-more-btn {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    font-weight: 600;
+}
+
