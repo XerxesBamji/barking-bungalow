@@ -113,7 +113,7 @@ input, textarea {
 /* Reviews section */
 
 
-review-card {
+.review-card {
     transition: transform 0.3s ease;
 }
 
