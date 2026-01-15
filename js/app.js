@@ -203,4 +203,29 @@ $(document).ready(function() {
         'wrapAround': true,
         'albumLabel': 'Image %1 of %2'
     });
+
+
+    var galleryHTML2 = '';
+    
+    for(let i = 1; i <= 9; i++) {
+        galleryHTML2 += `
+            <a href="img/about/photo${i}.jpg" 
+               data-lightbox="about-gallery" 
+               data-title="About us Photo ${i}" 
+               class="gallery-item bg-[#1c2025] p-2 rounded-lg shadow-lg shadow-black">
+                <img src="img/about/photo${i}.jpg" alt="About us photo ${i}">
+            </a>
+        `;
+    }
+    
+    // Add to gallery container
+    $('#gallery2').html(galleryHTML2);
+    
+    // Configure Lightbox2 options
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'albumLabel': 'Image %1 of %2'
+    });
+
 });
